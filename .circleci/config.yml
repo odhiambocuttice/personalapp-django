@@ -24,7 +24,7 @@ jobs:
             . mypersonalapp/bin/activate
             pip install --upgrade pip
             pip install -r requirements.txt
-      steps:
+    steps:
       - run:
           name: Install awscli
           command: sudo pip3 install awscli
