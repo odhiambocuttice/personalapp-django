@@ -35,15 +35,7 @@ jobs:
           command: |
             . mypersonalapp/bin/activate
             cd personalapp
-            python3 manage.py test
+            coverage run --source='.' manage.py test
             coverage report
           
-      - run:
-          name: tests-results
-          command: |
-            store_test_results:
-              path: test-results
-            store_artifacts:
-              path: test-results
-              destination: tr1
  
