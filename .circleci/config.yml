@@ -9,7 +9,7 @@ jobs:
     docker:
       - image: circleci/python:3.7
 
-    working_directory: ~/mypersonalapp-django
+    working_directory: ~/personalapp
 
 
     # series/ list of steps done for the build
