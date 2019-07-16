@@ -80,8 +80,8 @@ DATABASES = {
         "NAME": "hello",
         "USER": "personalapp",
         "PASSWORD": "hello",
-       # "HOST": "localhost",
-        "HOST": "db",
+        "HOST": "localhost",
+        #"HOST": "db",
         "PORT": "5432",
     }
     }
