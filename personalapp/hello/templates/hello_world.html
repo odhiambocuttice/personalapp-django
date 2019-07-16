@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{% block content%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Add additional CSS in static file -->
+</head>
+<body background="https://images2.minutemediacdn.com/image/upload/c_crop,h_979,w_1739,x_0,y_298/v1557337018/shape/mentalfloss/539787-istock-654248756_2.jpg?itok=_JVqQ1_T" style="opacity: 20%">
+	 
+  <div class="container-fluid">
+  	<h1 style="text-align: center; " >Welcome Coffee Customer</h1>
+    <div class="row">
+   
+        <ul class="sidebar-nav">
+          <li><a href="{% url 'project' %}">Coffee Types</a></li>
+          <li><a href="{% url 'create' %}">Lets Try Yours</a></li>
+          <li><a href=""> Enjoy </a></li>
+        </ul>
+
+      
+    </div>
+  </div>
+</body>
+</html>
+
+{% endblock %}

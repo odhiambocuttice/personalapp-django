@@ -1,0 +1,7 @@
+
+[report]
+show_missing = True
+omit =
+    manage.py
+    mysite/wsgi.py
+    mypersonalapp*
