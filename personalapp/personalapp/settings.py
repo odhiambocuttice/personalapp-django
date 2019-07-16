@@ -81,8 +81,8 @@ DATABASES = {
         "USER": "personalapp",
         "PASSWORD": "hello",
        # "HOST": "localhost",
-        # "HOST": "db",
-        #"PORT": "5432",
+        "HOST": "db",
+        "PORT": "5432",
     }
     }
 
