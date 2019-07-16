@@ -34,7 +34,7 @@ jobs:
           name: run tests
           command: |
             . mypersonalapp/bin/activate
-            cd mypersonalapp
+            cd personalapp
             python3 manage.py test
             coverage report
           
