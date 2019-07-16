@@ -24,7 +24,7 @@ jobs:
             . mypersonalapp/bin/activate
             pip install --upgrade pip
             pip install -r requirements.txt
-    steps:
+    
       - run:
           name: Install awscli
           command: sudo pip3 install awscli
@@ -33,11 +33,11 @@ jobs:
       - run:
           name: run tests
           command: |
+            . mypersonalapp/bin/activate
+            cd mypersonalapp
             coverage run --source='.' manage.py test
-            sudo pip3 install pytest
-            pytest -v --cov=tests
             coverage report
-            coverage html
+          
       - run:
           name: tests-results
           command: |
