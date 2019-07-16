@@ -35,7 +35,7 @@ jobs:
           command: |
             . mypersonalapp/bin/activate
             cd mypersonalapp
-            coverage run --source='.' personalapp/manage.py test
+            python3 manage.py test
             coverage report
           
       - run:
