@@ -30,7 +30,7 @@ jobs:
           command: sudo pip3 install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync jekyll/_site/docs s3://circle-production-static-site/docs/ --delete
+          command: aws s3 sync cuttice 
 
       # Step 3: run linter and tests
       - run:
